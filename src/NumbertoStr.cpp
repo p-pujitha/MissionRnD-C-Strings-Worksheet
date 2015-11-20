@@ -31,34 +31,26 @@ void number_to_str(float f, char *str,int ad){
 		str[0] = '-';
 		k = 1;
 		f = -(f);
-		//printf("\n Float value=%f",f);
 	}
 	else
 		k = 0;
 	int num = (int)f;
-	//printf("%d\n",num);
 	float ans = (float)f - num;
-	//printf("%f\n",ans);
-	for (int m = 0; m<ad; m++)
+	for (int m = 0; m < ad; m++)
 	{
 		ans = ans * 10;
 	}
-	//printf("\nans==%f\n",ans);
 	int num2 = (int)ans;
-	//printf("\nnum2==%d",num2);
 	while (num != 0)
 	{
 		int rem = num % 10;
 		str2[i] = rem + '0';
-		//printf("%c\t",str2[i]);
-		i++;
+			i++;
 		num = num / 10;
 	}
 
 	str2[i] = '\0';
 
-
-	//printf("\n");
 	for (int j = i - 1; j >= 0; j--)
 	{
 		str[k] = str2[j];
