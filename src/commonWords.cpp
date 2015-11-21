@@ -18,7 +18,11 @@ NOTES: If there are no common words return NULL.
 
 char ** commonWords(char *str1, char *str2) {
 
+	char **a;
+	for (int i = 0; str2[i] != '\0'; i++)
+	{
 
+	}
 
 	return NULL;
 }
